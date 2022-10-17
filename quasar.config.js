@@ -13,9 +13,6 @@ const { configure } = require('quasar/wrappers');
 
 module.exports = configure(function (/* ctx */) {
   return {
-    bin: {
-      windowsAndroidStudio: "C:\\Users\\xeder\\AppData\\Local\\JetBrains\\Toolbox\\apps\\AndroidStudio\\ch-0\\213\.7172\.25\.2113\.9123335\\bin\\studio64.exe"
-    },
     eslint: {
       // fix: true,
       // include = [],
@@ -63,6 +60,7 @@ module.exports = configure(function (/* ctx */) {
       },
 
       vueRouterMode: 'history', // available values: 'hash', 'history'
+      // vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -70,6 +68,7 @@ module.exports = configure(function (/* ctx */) {
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       publicPath: '/DcWebhookMessager/',
+      // publicPath: '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
